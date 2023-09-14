@@ -180,7 +180,7 @@ export async function fetchThreadById(threadId: string) {
         path: "children", // Populate the children field
         populate: [
           {
-            path: "auhtor", // Populate the author field within children
+            path: "author", // Populate the author field within children
             model: User,
             select: "_id id name parentId image", // Select only _id and username fields of the author
           },
